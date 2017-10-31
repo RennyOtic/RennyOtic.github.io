@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Blog</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style>
+		.notice {
+			-moz-box-shadow:0 5px 8px -6px rgba(0,0,0,.2);
+			-webkit-box-shadow:0 5px 8px -6px rgba(0,0,0,.2);
+			box-shadow:0 5px 8px -6px rgba(0,0,0,.2);
+			background-color:#fafafa;
+			border-left:6px solid #7f7f84;
+			border-right:6px solid #7f7f84;
+			font-size:16px;
+			margin-bottom:10px;
+			padding:30px;
+		}
+		.notice-success {border-color:#80D651;}
+		.notice-success>strong {color:#80D651;}
+		.notice-primary {border-color:#255e8e;}
+		.notice-primary>strong {color:#255e8e;}
+		.notice-info {border-color:#45ABCD;}
+		.notice-info>strong {color:#45ABCD;}
+		.notice-warning {border-color:#FEAF20;}
+		.notice-warning>strong {color:#FEAF20;}
+		.notice-danger {border-color:#d73814;}
+		.notice-danger>strong {color:#d73814;}
+		.color{color:#009BFF;}
+		.modal-body p {
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron alert-success">
+			<h1 class="text-red">¡Curso de programación basica.!</h1>
+			<h3 class="">Realizado Por:</h3>
+			<div style="color: black">
+				<p>Gallardo, Yolemar<br>
+					Rodriguez, Jose<br>
+					Rodriguez, Ronaldo<br>
+					Romero, Jesus<br>
+				Suarez, Renny</p>
+			</div>
+			<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+		</div>
+		<div class="notice notice-primary col-md-12 ventana 1">
+			<strong>Leccion 1: Introducción</strong>
+			<div class="pull-right">
+				<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#leccion1"><span class="fa fa-eye"></span> Ver</button>
+			</div>
+		</div>
+		<div class="notice notice-success col-md-12 ventana 1">
+			<strong>Leccion 2: Variables</strong>
+			<div class="pull-right">
+				<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#leccion2"><span class="fa fa-eye"></span> Ver</button>
+			</div>
+		</div>
+		<div class="notice notice-info col-md-12 ventana 1">
+			<strong>Leccion 3: Operadores</strong>
+			<div class="pull-right">
+				<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#leccion3"><span class="fa fa-eye"></span> Ver</button>
+			</div>
+		</div>
+		<div class="notice notice-warning col-md-12 ventana 1">
+			<strong>Leccion 4: Estructuras de control</strong>
+			<div class="pull-right">
+				<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#leccion4"><span class="fa fa-eye"></span> Ver</button>
+			</div>
+		</div>
+		<div class="notice notice-danger col-md-12 ventana 1">
+			<strong>Leccion 5: Estructuras de Control</strong>
+			<div class="pull-right">
+				<button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#leccion5"><span class="fa fa-eye"></span> Ver</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="leccion1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title text-center">Introducción</h2>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10 col-md-offset-1">
+						<h3>Sean todo bienvenidos.</h3>
+
+						<p>A lo largo de este curso, aprenderemos los pasos necesarios para programar en PHP, junto con una rápida introducción a las bases de la programación.</p>
+
+						<p>Para iniciar nuestro curso, debemos saber donde obtememos PHP y de dónde surge la idea de PHP.</p>
+						<br><br>	
+
+						<h4>UN POCO DE HISTORIA DE PHP</h4>
+
+						<p>PHP es un acrónimo de PHP: Hypertext Preprocessor, aunque los orígenes del nombre se remontan al nombre Personal Home Page. PHP es un lenguaje de alto nivel que va embebido (insertado) en páginas HTML. Por otro lado, PHP es un lenguaje del lado del servidor (Server Side Scripting Languaje), lo cual significa que el usuario abre la página HTML y hace una petición de interactuar, PHP, instalado en el servidor web, interpreta la petición y envía una respuesta al usuario, lo cual hace la diferencia entre lenguajes como PHP y lenguajes como javascript, que son lenguajes del lado del usuario.</p>
+
+						<p>PHP fue concebido en 1994 por Rasmus Lerdorf, cuyo uso fue personal por esos tiempos, para controlar la cantidad de personas que consultaban su hoja de vida, es decir, su "decubrimiento" fue accidental (¿qué les parece?, como la penicilina)</p>
+
+						<p>PHP es un lenguaje de código abierto, lo cual implica que, por un lado, hay un grupo de desarrolladores que contribuyen a la elaboración y fortalecimiento del lenguaje; y, en segundo lugar, que es un lenguaje por el que no necesitamos pagar derechos de autor (licencia) para utilizarlo.</p>
+						<br><br>	
+						<h4>CÓMO FLUYE LA MAYORÍA DE LA INFORMACIÓN A TRAVÉS DEL INTERNET EN UNA PÁGINA DINÁMICA</h4>
+
+						<p>Una página dinámica implica la interacción entre el usuario y un script desarrollado en un lenguaje que permita el dinamismo, es decir, que permita la interacción entre el usuario y un Servidor Web y un Servidor de Base de Datos (en caso de existir uno). Es decir, que el usuario haga una petición al servidor Web, éste se comunica con el servidor de base de datos, extrae la información de la base de datos y presenta la información en la pantalla del usuario.</p>
+
+						<p>Un ejemplo bastante claro, es la forma en la que nos inscribimos en algún servicio de correo electrónico, en el que proporcionamos nuestro nombre, apellido, un nombre para el correo de la forma minombre@miproveedor.com y una palabra clave. Cuando, por ejemplo, al día siguiente, vamos a ver nuestros correos electrónicos, basta con escribir nuestro nombre de usuario y palabra de acceso para que accesemos a nuestra cuenta. Todo lo anterior, es gracias a una página dinámica, que solicita los datos al servidor Web que a su vez, extra los datos de nuestra cuenta del Servidor de Base de Datos.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade bs-example-modal-lg" id="leccion2" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title text-center">Variables</h2>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10 col-md-offset-1">
+						<p>Antes de comenzar a explicar como se desarrolla un algoritmo necesitamos definir el termino variable. Se trata de un símbolo que representa a un elemento no definido dentro de un determinado conjunto.
+						Por ejemplo en matemática solemos utilizar el símbolo ‘x’ para representar un valor dentro del conjunto de los números. Como la misma palabra lo indica el valor de ‘x’ puede variar. Es decir, su valor no se encuentra explicito, sino que puede tomar cualquier valor (numérico) dependiendo de diversos factores.</p>
+
+						<p>En programación una variable, representa un espacio en memoria RAM al que le podemos asignar diferentes valores (datos) de manera temporal. Las variables pueden ser de diferentes tipos, es decir representar elementos dentro de diferentes conjuntos.</p>
+						<p>Existen en programación tres tipos básicos de datos; numéricos, alfanuméricos y lógicos o booleanos.</p>
+
+						<p>El tipo de dato numérico, a su vez puede dividirse en números enteros y números con coma (reales). Por ejemplo decimos que 54 es un número entero, y 45,32 es un numero real.</p>
+
+						<p>Una variable alfanumérica puede contener cualquier carácter o cadena de caracteres que admita nuestra computadora. Por ejemplo “Hola que tal”, “a” , “4jks*”, “123”, etc.</p>
+
+						<p>Una variable lógica o booleana puede contener solo dos valores diferentes; verdadero o falso.</p>
+
+						<p>Cabe destacar que una variable puede contener valores de un solo tipo de datos. Es decir, a una variable de tipo entera no podemos asignarle una cadena de caracteres, solo números enteros.</p>
+
+						<p>Imaginemos una variable como una botella. El contenido de la misma puede variar (agua, gaseosa, jugo), pero su tipo de contenido siempre va a ser líquido. Sabemos que en realidad podemos poner otra cosa, arena por ejemplo, pero no es el fin para el que fue creada.</p>
+						<br><br>
+
+						<h3>Operaciones Matemáticas con variables</h3>
+
+						<p>Las operaciones con variables dependerán del contenido que éstas guarden, por consiguiente no es lo mismo utilizar el signo de más (+) con variables que guardan números, que utilizarlo con variables que guardan cadenas de caracteres.</p>
+
+						<p>Las operaciones matemáticas con variables se llevan cabo de manera horizontal y de izquierda a derecha.</p>
+
+						<p>Para poner un ejemplo, si tenemos las variables siguientes:</p>
+
+						<code>$numero1 = 15; $numero2 = 23;</code>
+						<br>
+						<p>Y el fragmento de código:</p>
+
+<pre>
+	< ?php
+
+	$numero1 = 15;
+
+	$numero2 = 23;
+
+	echo $numero1 + $numero2;
+
+	?>
+
+</pre>
+
+						<p>Obtendremos un resultado como el siguiente:</p>
+
+						<p>La misma lógica aplica para todas las operaciones matemáticas básicas, es decir la suma ($variable1 + $variable2), la resta ($variable1 - $variable2), la multiplicación ($variable1 * $variable2) y la división (($variable1 / $variable2); además, está una operación más, la operación módulo ($variable1 % $variable2). La operación módulo proporciona el cociente que resulta de la división entre la variable1 y la variable2. Si bien de momento la utilidad de esta función no resulta alocadamente obvia, podemos asegurar que la utilizarán en más de algún programa que desarrollen en un futuro cercano.</p>
+
+						<p>Operaciones con cadenas</p>
+
+						<p>Existe un operador de cadena que es el operador punto ( . ), este operador sirve para concatenar una cadena con otra, de la forma $variable1.$variable 2. Es decir, si tuviésemos el siguiente segmento de código:</p>
+
+<pre>
+	< ?php
+
+	$primer_nombre = "Juan";
+
+	$segundo_nombre = "Antonio";
+
+	echo $primer_nombre.$segundo_nombre
+
+	?>
+</pre>
+
+
+
+						<p>El resultado impreso en la pantalla sería:</p>
+
+						<p>JuanAntonio</p>
+
+						<p>Bien, en cuanto a las operaciones más básicas con variables y en cuanto a las reglas de declaración de variables, hemos aprendido lo necesario. En nuestro próxima entrega, vamos a aprender sobre otro tipo de operadores utilizados en PHP.</p>
+
+						<p>Por el momento, hasta pronto.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade bs-example-modal-lg" id="leccion3" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title text-center">Variables</h2>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10 col-md-offset-1">
+						<h2>Precedencia de Operadores en PHP</h2>
+						<div class="">
+							<table class="table table-bordered table-hover">
+							<tr>
+								<td>Asociatividad</td>
+								<td>Operadores</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>,</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>or</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>xor</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>and</td>
+							</tr>
+							<tr>
+								<td>derecha</td>
+								<td>print</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>=, +=, -=, *=, /=, %=</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>?:</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>||</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>&&</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>|</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>^</td>
+							</tr>
+							<tr>
+								<td>no asociativo</td>
+								<td>&</td>
+							</tr>
+							<tr>
+								<td>no asociativo</td>
+								<td>==, !=, ===</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td><,<=,>,>=</td>
+							</tr>
+							<tr>
+								<td>izquierda</td>
+								<td>+, - , .</td>
+							</tr>
+							<tr>
+								<td>derecha</td>
+								<td>*, /, %</td>
+							</tr>
+							<tr>
+								<td>derecha</td>
+								<td>!,~,++,--,(int), (double), (string),(array), (object), @</td>
+							</tr>
+							<tr>
+								<td>no asociativo</td>
+								<td>[</td>
+							</tr>
+						</table></div>
+						<div class="clearfix"></div>
+						<div class="">
+							<h2>Operador Ternario</h2>
+
+						<p>El operador ternario ?:, funciona de la forma (exp1) ? (exp2) : (exp3);</p>
+
+						<p>Lo anterior significa que la expresión tomará el valor de exp2 si exp1 se valúa como cierto, y el valor de exp3 si el valor de exp1 resulta falso. Un ejemplo sería:</p>
+
+<pre>
+< ?php
+
+	$nombre = "Roberto";
+
+	echo ($nombre == "Roberto") ? "Hola Roberto" : "No te conozco";
+
+?>
+</pre>
+
+						<p>El código anterior nos da como salida en la pantalla lo siguiente:</p>						
+						<p>Si la variable $nombre hubiese tenido otro valor diferente a Roberto, entonces el resultado en pantalla hubiese sido No te conozco</p>
+
+						<p>Este operador se utiliza de forma similar en una gran cantidad de lenguajes de programación, por lo que para quienes ya tienen experiencia en programación, por ejemplo en C o C++, no les resultará desconocido.</p>
+
+						<p>Bien, eso es todo, por el momento, en cuanto a operadores se refiere, en la próxima entrega aprenderemos sobre las estructuras de control, y nuestros programas en PHP comenzarán a hacerse más interesantes, por el momento: hasta pronto.</p>
+					</div>
+						</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade bs-example-modal-lg" id="leccion4" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title text-center">Estructuras de control.</h2>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10 col-md-offset-1">
+						<h2>Estructuras de control (IF y ELSE)</h2>
+
+						<p>Como ya se explicó con anterioridad, cada archivo de comandos PHP se compone de una serie de sentencias. La sentencia puede ser una asignación, una llamada a una función (calma, las funciones vienen en camino en una entrega posterior), una sentencia condicional, etc. Por favor recuerden que cada sentencia termina con el punto y coma (;), lo que significa que si dicho símbolo no se escribe al final de cada sentencia, PHP hará de cuenta que la sentencia no ha terminado hasta que un punto y coma sea encontrado. Los resultados de omitir un punto y coma van desde los más leves e insignificantes, hasta los más catastróficos, desesperantes y estresantes (enfermedad de moda en nuestros tiempos, además de casi inevitable), que se puedan imaginar, así que por favor, no olviden de finalizar cada sentencia con un punto y coma. Por otro lado, también es necesario mencionar que las sentencias pueden ser agrupadas en grupos de sentencias, que estarán encerradas dentro de llaves { }. Por consiguiente, un grupo de sentencias encerradas en llaves, son en realidad, una sola sentencia. En esta entrega, veremos los diferentes tipos de sentencias que pueden haber en un programa PHP:</p>
+
+						<p>IF</p>
+
+						<p>"Si me gustan los chocolates, me los como"</p>
+
+						<p>Una de las estructuras de control más básicas, y sin embargo una de las más importantes, es la estructura if. Dicha estructura evalúa el valor de una expresión y dependiendo de si la evaluación resulta verdadera o falsa, la sentencia a continuación de if se ejecutará o se ignorará.</p>
+
+						<p>La sintaxis es la siguiente:</p>
+
+						<p>if(expr1)
+						sentencia</p>
+
+						<p>Así, si tenemos el siguiente fragmento de código:</p>
+
+<pre>
+< ?php
+
+	$a = 1;
+
+	$b = 3;
+
+	if($a < $b)
+
+	echo "$a es menor que $b";
+
+?>
+</pre>
+
+						<p>El resultado en pantalla sería el siguiente:</p>
+						<p>Dado que 1 (valor de $a) es decididamente menor que 3 (el valor de $b), la sentencia echo "$a es menor que $b" se imprime en la pantalla de nuestro navegador de Internet. Si el caso hubiese sido que el valor de $a hubiese sido, por ejemplo 5, el navegador simplemente nos hubiese mostrado una pantalla vacía.</p>
+
+						<p>Por favor observen que al final de la sentencia que contiene el IF, NO hay un punto y coma. Por favor tengan en cuenta que si ponen un punto y coma al final de la línea de código que contiene el IF, dicha sentencia, si bien se ejecutará, tendrá un defecto de sintaxis que puede llegar a ser peligroso en caso de un programa verdaderamente grande.</p>
+
+						<p>La instrucción echo, como ya se explicó anteriormente proporciona una salida en pantalla de todo lo que esté dentro de las comillas dobles (" "), por lo que es importante observar cuidadosamente el resultado de nuestro código. Si se dan cuenta la sentencia de impresión (o de salida a pantalla) dice echo "$a es menor que $b", pero el resultado en pantalla dice 1 es menor que 3. Lo anterior implica que, cuando imprimimos variables dentro de una instrucción echo, incluso cuando las variables están incluidas dentro de las comillas, lo que se imprimirá en pantalla será el valor de dicha variable y no la cadena de caracteres que implica dicha variable, en nuestro ejemplo serían las cadenas "$a" y "$b". Si nuestro deseo es imprimir las cadenas de caracteres mencionadas, entonces debemos utilizar la instrucción de impresión de caracteres especiales \. En otras palabras, la instrucción debería ser echo "\$a es menor que \$b";</p>
+
+						<p>Con las correcciones anteriores, el resultado sería el siguiente:</p>
+
+						<p>Como resulta claro, el operador \, hace que el carácter especial $ se imprima en pantalla.</p>
+
+						<p>Por otro lado, la mayoría de las veces, necesitaremos agrupar más de una sentencia, dentro de la sentencia IF. Si ese fuese el caso, debemos de tener en cuenta que después del primer punto y coma, la sentencia IF se acaba, por ello, para encerrar a varias sentencias, dentro de la sentencia IF, debemos utilizar las llaves { } para encerrar a todas las sentencias que deseemos que estén dentro de nuestra estructura de control IF, de la siguiente forma:</p>
+
+<pre>
+< ?php
+
+	$a = 1;
+
+	$b = 3;
+
+	if($a < $b){
+
+	echo "\$a es menor que\ $b<BR>";
+
+	echo "El valor de \$a es $a y el de \$b es $b";
+
+	}
+
+?>
+</pre>
+					<p>Para el ejemplo anterior, el resultado en pantalla sería el siguiente:</p>
+
+					<p>Así pues, por favor recuerden de encerrar entre llaves las sentencias que han de ir dentro de una sola sentencia IF.</p>
+
+					<p>Esto es todo en cuanto a IF, al menos por el momento. En la siguiente entrega veremos algo sobre su complemento perfecto, es decir la sentencia ELSE.</p>
+					<br><br>
+
+					<p>ELSE</p>
+
+					<p>"Si me gustan los chocolates me los como, sino, los regalo"</p>
+
+					<p>En muchas ocasiones, la evaluación verdadera de una sentencia no es suficiente, ya que en la mayoría de las ocasiones es necesario hacer algo específico si la evaluación resulta verdadera o hacer otra cosa si la evaluación resulta falsa. Para ello existe un complemento de la sentencia IF, que es la sentencia ELSE, la cual se ejecuta sólo en caso de que la sentencia no resulte verdadera.</p>
+
+					<p>Así pues, siguiendo con nuestro ejemplo anterior (y cambiándolo un poco), tendríamos:</p>
+
+<pre>
+< ?php
+
+	$a = 3;
+
+	$b = 1;
+
+	if($a < $b){
+
+	echo "\$a es menor que \$b<BR>";
+
+	echo "El valor de \$a es $a y el de \$b es $b";
+
+	}
+
+	else{
+
+	echo "\$a es mayor que \$b<BR>";
+
+	echo "El valor de \$a es $a y el valor de \$b es $b";
+}
+
+?>
+</pre>
+
+			<p>Siendo que la evaluación es falsa y definitivamente 3 no es menor que 1, nos vemos en la obligación de hacer que nuestro programa reaccione ante este hecho y que nos de una respuesta en vez de dejarnos con una enigmática página en blanco (el temor de cualquier escritor,... incluso de un escritor de programas para computadora). Por las razones anteriores, la sentencia ELSE viene en nuestro auxilio y nos brinda la otra solución posible, si la sentencia no es menor, entonces, debe ser mayor y nos imprime el resultado en pantalla de la siguiente forma:</p>
+
+			<p>Sin embargo, hay algo que debería preocuparnos (pero,... siempre hay un pero, ¿no es así?). Si leyeron bien las últimas dos filas del párrafo anterior dicen si la sentencia no es menor, entonces, debe ser mayor, lo cual no debe ser algo mandatorio, porque, que tal si no es ni mayor ni menor, sino más bien igual. Esto implica que las sentencias IF...ELSE, no serían suficientes. ¿Habrá alguna forma de solucionar esto?, ¿existirá alguna sentencia que nos ayude a solventar este problema? La respuesta es SÍ, sí que la hay...</p>
+
+			<h2>ELSEIF</h2>
+
+			<p>"Si me gustan los chocolates me los como, sino, los vendo, sino, los regalo"</p>
+
+			<p>Cuando las evaluaciones de una expresión van más allá de una o dos sentencias, entonces es necesario utilizar la instrucción elseif. Es decir, si la expresión 1 es verdadera se ejecutan las sentencias después de la instrucción IF, sino, se ejecutarían las que acompañan a elseif, si la expresión 1 tampoco cumple con la evaluación de elseif, entonces se ejecutan las sentencias de else.</p>
+
+			<p>Para seguir con nuestro queridísimo y entrañable ejemplo:</p>
+<pre>
+< ?php
+
+	$a = 3;
+
+	$b = 1;
+
+	if($a < $b){
+
+	echo "\$a es menor que \$b<BR>";
+
+	echo "El valor de \$a es $a y el de \$b es $b";
+
+	}
+
+	elseif($a>$b){
+
+	echo "\$a es mayor que \$b<BR>";
+
+	echo "El valor de \$a es $a y el valor de \$b es $b";
+
+	}
+
+	else{
+
+	echo "\$a es igual que \$b<BR>";
+
+	echo "El valor de \$a es $a y el valor de \$b es $b";
+
+	}
+
+?>
+</pre>
+
+ 
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade bs-example-modal-lg" id="leccion5" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title text-center">Estructuras de Control</h2>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-offset-1 col-md-10">
+						<h2>Estructuras de Control (WHILE FOR DO...WHILE)</h2>
+
+						<p>Sí, la verdad es que las estructuras de control son, por decirlo de alguna manera, la columna vertebral de cualquier lenguaje de programación y es necesario explicarlas con toda la holgura necesaria.</p>
+
+						<p>Como recordarán, en la entrega anterior vimos las estructura IF...ELSEIF...ELSE. Esta estructura nos permite tomar una decisión en cuanto al rumbo que nuestro programa tomará, dependiendo de si una condición se cumple o no se cumple. En esta entrega iniciaremos con lo que se conoce como bucles, lo que no es más que una sentencia que se repite una y otra vez, hasta que una condición se cumple.</p>
+
+						<p>Empezamos:</p>
+
+
+						<h4>WHILE</h4>
+
+						<p>"Mientras sea de día, tengo que trabajar"</p>
+
+						<p>La sentencia WHILE viene a ser como el primer eslabón de la cadena evolutiva de un bucle, es decir, el bucle más sencillo que hay. Lo que hace esta sentencia no es más que decirle a PHP que ejecute las sentencias que contenga la instrucción WHILE, tanto tiempo como la expresión se evalúe como verdadera (TRUE).</p>
+
+						<p>La sintaxis de WHILE es:</p>
+
+						<code>while(expresión){sentencias}</code>
+
+					<p>Como ejemplo pondremos lo siguiente:</p>
+<pre>
+<?php
+
+	$a = 1;
+
+	while($a < 11){
+
+	echo $a."<BR>";
+
+	$a++;
+
+	}
+
+?>
+</pre>
+				<b>Observaciones necesarias</b>
+				<p>Como podrán observar, la sentencia WHILE, como se habrán dado cuenta, contiene el operador de comparación menor que (<), el cual le dice a while que la variable $a NO DEBE llegar al número 11. Lo mismo pudo haberse logrado cambiando la sentencia por "$a <= 10;", lo cual, de hecho hubiese sido más exacto y más legible.</p>
+				<p>Por otro lado, por favor observen la sentencia echo $a."< BR >";</p>
+
+				<p>Como ya habrán podido apreciar, después de la variable, estamos utilizando el operador punto (.), el cual, como ya sabemos, concatena resultados de cadena. En realidad, en nuestro ejemplo, la concatenación es una seudoconcatenación, ya que en realidad, el operador punto sólo le dice a PHP que después de la primera pasada por la variable $a (en la cual dicha variable vale 1), agregue un salto de línea de HTML, es decir la etiqueta <BR>, de tal manera que al repetirse el bucle, siendo que $a todavía es menor que 11, la respuesta siguiente (2), se imprima en otra línea. Este mismo ciclo o bucle, se repetirá hasta que la expresión se haga falsa, es decir cuando $a deje de ser menor que 11.</p>
+
+				<p>En nuestra próxima entrega, una forma distinta de WHILE.</p>
+				<br><br>
+
+				<h2>Estructuras de Control (WHILE)</h2>
+
+				<p>Sí, la verdad es que las estructuras de control son, por decirlo de alguna manera, la columna vertebral de cualquier lenguaje de programación y es necesario explicarlas con toda la holgura necesaria.</p>
+
+				<p>Como recordarán, en la entrega anterior vimos las estructura IF...ELSEIF...ELSE. Esta estructura nos permite tomar una decisión en cuanto al rumbo que nuestro programa tomará, dependiendo de si una condición se cumple o no se cumple. En esta entrega iniciaremos con lo que se conoce como bucles, lo que no es más que una sentencia que se repite una y otra vez, hasta que una condición se cumple.</p>
+
+				<p>Empezamos:</p>
+
+				<h2>WHILE</h2>
+
+				<p>"Mientras sea de día, tengo que trabajar"</p>
+
+				<p>La sentencia WHILE viene a ser como el primer eslabón de la cadena evolutiva de un bucle, es decir, el bucle más sencillo que hay. Lo que hace esta sentencia no es más que decirle a PHP que ejecute las sentencias que contenga la instrucción WHILE, tanto tiempo como la expresión se evalúe como verdadera (TRUE).</p>
+
+				<p>La sintaxis de WHILE es:</p>
+
+				<p>while(expresión){sentencias}</p>
+
+				<p>Como ejemplo pondremos lo siguiente:</p>
+<pre>
+< ?php
+
+	$a = 1;
+
+	while($a < 11){
+
+	echo $a."<BR>";
+
+	$a++;
+
+	}
+
+?>
+</pre>
+
+
+		<b>Observaciones necesarias</b>
+
+		<p>Como podrán observar, la sentencia WHILE, como se habrán dado cuenta, contiene el operador de comparación menor que (<), el cual le dice a while que la variable $a NO DEBE llegar al número 11. Lo mismo pudo haberse logrado cambiando la sentencia por "$a <= 10;", lo cual, de hecho hubiese sido más exacto y más legible.</p>
+
+		<p>Por otro lado, por favor observen la sentencia echo $a."< BR >";</p>
+		<p>Como ya habrán podido apreciar, después de la variable, estamos utilizando el operador punto (.), el cual, como ya sabemos, concatena resultados de cadena. En realidad, en nuestro ejemplo, la concatenación es una seudoconcatenación, ya que en realidad, el operador punto sólo le dice a PHP que después de la primera pasada por la variable $a (en la cual dicha variable vale 1), agregue un salto de línea de HTML, es decir la etiqueta < BR>, de tal manera que al repetirse el bucle, siendo que $a todavía es menor que 11, la respuesta siguiente (2), se imprima en otra línea. Este mismo ciclo o bucle, se repetirá hasta que la expresión se haga falsa, es decir cuando $a deje de ser menor que 11.</p>
+
+		<p>En nuestra próxima entrega, una forma distinta de WHILE.</p>
+
+		<p>FOR</p>
+
+		<p>"Para todos estos niños, reparte estos caramelos"</p>
+
+		<p>La enorme belleza del bucle FOR, es que todo su poder se resume en una sola fila, la igual que toda su complejidad. La sintaxis de un bucle FOR es la siguiente:</p>
+
+		<p>for (exp1; exp2; exp3)</p>
+
+		<p>La primera expresión (exp1) se ejecuta una vez, al principio del bucle.</p>
+
+		<p>La segunda expresión (exp2) se evalúa al comienzo de cada iteración o retorno al bucle.</p>
+
+		<p>La tercera expresión (exp3) se ejecuta al final de cada iteración o retorno al bucle.</p>
+
+		<p>Nuestro ejemplo sería:</p>
+<pre>
+<?php
+
+	for($i = 0; $i <= 10; $i++){
+
+	echo "Esta es la fila ".$i;
+
+	echo "< BR>";
+
+	}
+
+?>
+</pre>
+
+					<b>Observaciones:</b>
+
+					<p>En primer lugar, debemos notar que la variable $i es inicializada en 0 y termina en 10, por consiguiente, y en estos momentos podrá parecer totalmente irrelevante pero puede llegar a salvarles la vida, el número de filas es 11 y no 10.</p>
+
+
+
+					<p>Por otro lado, la variable $i es inicializada en la declaración del bucle FOR y no antes.</p>
+					<p>Bien, los bucles en PHP representan, como ya vimos, la forma de llevar a cabo una serie de sentencias, basados en la evaluación, (cierta o falsa) de las expresiones contenidas. En una entrega posterior vamos a aprender una manera muy sencilla de tomar decisiones, siempre claro, dentro de las estructuras de control.</p>
+
+					<p>Por el momento, hasta pronto.</p>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
